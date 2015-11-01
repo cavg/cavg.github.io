@@ -1,0 +1,10 @@
+# Site settings
+title: CAVG's blog
+email: camilo.verdugo@gmail.com
+description: "Sharing technical snippets"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://cavg.github.io" # the base hostname & protocol for your site
+twitter_username: camilo_verdugo
+github_username:  cavg
+# Build settings
+markdown: kramdown
