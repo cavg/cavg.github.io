@@ -2,38 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CAVG&#39;s blog</title>
-    <description>Sharing technical stuffs and some life bits.</description>
+    <description>Sharing technical snippets</description>
     <link>http://cavg.github.io/</link>
     <atom:link href="http://cavg.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 01 Nov 2015 17:40:29 -0300</pubDate>
-    <lastBuildDate>Sun, 01 Nov 2015 17:40:29 -0300</lastBuildDate>
+    <pubDate>Sun, 01 Nov 2015 22:59:34 -0300</pubDate>
+    <lastBuildDate>Sun, 01 Nov 2015 22:59:34 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Notes: Building microservices of Sam Newman</title>
+        <description>&lt;p&gt;I have been working for three years as a Software Developer and in all companies I have found the same mistake in software products, when software are so big is very hard to maintain, the main reason is that technical debt increase every month and there is no willingness to clean the house before continue.
+When I saw those kind of software, the pattern is the same, all are implemented as a monolithic code with high coupling.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;So I decided to learn and apply the approach of Microservices.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Architecture oriented to Microservices is different than oriented to the functionality, because its proposal is divide a business domain in independent projects that are autonomous and each one resolve a specific problem related its concern, the trade-off of separation depends of a variety of aspects such as  cohesion, organization, teams, technologies, scope of each functionality, etc.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In first chapters, Sam Newman speaks about the architecture and its key benefits:&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Technology Heterogeneity&lt;/strong&gt;: Using the right technology for each job, or improve individually performance.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Resilience&lt;/strong&gt;: You can isolate the problem, and the system can carry on working. (Degrade funcitonality).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Scaling&lt;/strong&gt;: It is not require to scaling everything together, Just the small one part with overall performance. Also scaling on demand critical parts reduce operation costs.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Easy of deployment&lt;/strong&gt;: Features can be get out customer faster, because are independent.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Organizational aligment&lt;/strong&gt;: To be more productive, with smaller teams reducing the side of codebases.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Composability&lt;/strong&gt;: Reuse functionality for different purpose, for example variety of channels (mobile, desktop..).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Optimizing for Replaceability&lt;/strong&gt;: Avoid problem like a nasty leagacy code, because is to big and risky to been replaced.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 </description>
-        <pubDate>Sun, 01 Nov 2015 14:20:03 -0300</pubDate>
-        <link>http://cavg.github.io/jekyll/update/2015/11/01/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://cavg.github.io/jekyll/update/2015/11/01/welcome-to-jekyll.html</guid>
+        <pubDate>Sun, 01 Nov 2015 13:20:03 -0300</pubDate>
+        <link>http://cavg.github.io/microservices/2015/11/01/notes-about-book-building-microservices-sam-newman.html</link>
+        <guid isPermaLink="true">http://cavg.github.io/microservices/2015/11/01/notes-about-book-building-microservices-sam-newman.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>microservices</category>
         
       </item>
     
