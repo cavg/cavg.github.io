@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes: Building microservices of Sam Newman, Part I"
+title:  "Notes: Building microservices of Sam Newman, Part I benefits"
 date: 2015-11-01 16:20:03
 categories: microservices
 ---

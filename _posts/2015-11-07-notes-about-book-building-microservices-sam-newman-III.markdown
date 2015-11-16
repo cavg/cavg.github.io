@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes: Building microservices of Sam Newman, Part III"
+title:  "Notes: Building microservices of Sam Newman, Part III DB and Sync"
 date: 2015-11-07 10:41:04
 categories: microservices
 ---
