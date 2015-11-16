@@ -4,7 +4,7 @@ title:  "Debugging Grails Apps without IDE"
 date: 2015-11-15 22:41:04
 categories: grails
 ---
-I'am a fan of Sublime Text IDE, it is simple, easy to use and it has a lot of awesome packages, but for some programming languages have not a good support. Languages derived of JVM are a good sample of that.
+I'm a fan of Sublime Text IDE, it is simple, easy to use and it has a lot of awesome packages, but for some programming languages have not a good support. Languages derived of JVM are a good sample of that.
 
 One thing I miss in Sublime 3 is a debugger. These days I've been developing in Grails 3, who doesn't have real support in most used (free versions) IDEs such as Eclipse, Netbeans or IntelliJ.
 
@@ -14,7 +14,7 @@ Here is a sample how you can debug a Grails App with JDB.
 
 I have a Grails HelloWorld App, with one Controller called TestController.groovy:
 
-´´´groovy
+```groovy
 
 package com.hello
 
@@ -30,7 +30,7 @@ class TestController {
     	}
     }
 }
-´´´´
+```
 
 It's time for run our app (with flag --debug-jvm):
 
