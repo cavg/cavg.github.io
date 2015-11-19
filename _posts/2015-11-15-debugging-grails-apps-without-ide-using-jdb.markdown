@@ -14,23 +14,22 @@ Here is a sample how you can debug a Grails App with JDB.
 
 I have a Grails HelloWorld App, with one Controller called TestController.groovy:
 
-```groovy
 
-package com.hello
+    package com.hello
 
-class TestController {
+    class TestController {
 
-    def index() {
-    	try {
-    		def s = "chao"
-    		render "hola!!"
-    	}
-    	catch(e) {
-    		log.error(e)
-    	}
+        def index() {
+            try {
+                def s = "chao"
+                render "hola!!"
+            }
+            catch(e) {
+                log.error(e)
+            }
+        }
     }
-}
-```
+
 
 It's time for run our app (with flag --debug-jvm):
 
