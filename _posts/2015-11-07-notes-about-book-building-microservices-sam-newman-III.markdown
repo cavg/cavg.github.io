@@ -2,7 +2,7 @@
 layout: post
 title:  "Notes: Building microservices of Sam Newman, Part III DB and Sync"
 date: 2015-11-07 10:41:04
-categories: microservices
+category: microservices
 ---
 Integration is a very important topic in Microservices, because define the way of how diferent services are going to communicate to others. Other important concept is that integration and interfaces that are exposed to be consumed it has to be technology-agnostic so these days the answer is API REST, for modeling I strongly suggest 'API Design Design, Crafting interfaces' by API Gee
 

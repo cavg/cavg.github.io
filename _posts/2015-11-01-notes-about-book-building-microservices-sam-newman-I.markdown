@@ -2,7 +2,7 @@
 layout: post
 title:  "Notes: Building microservices of Sam Newman, Part I benefits"
 date: 2015-11-01 16:20:03
-categories: microservices
+category: microservices
 ---
 I have been working for three years as a Software Developer and in all companies I have found the same mistake in software products, when software are so big is very hard to maintain, the main reason is that technical debt increase every month and there is no willingness to clean the house before continue.
 When I saw those kind of software, the pattern is the same, all are implemented as a monolithic code with high coupling.

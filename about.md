@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I'm a Software Engineer, who someday wanna have its own company, meantime I learn about different business niches, technologies and management people.
+I’m a Software Engineer, who someday wanna have its own company, meantime I learn about different kind of business, technologies and people management.
 
-This site is to share mainly technical snippets
+So in this blog I'll share a mixed of those things.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Notes: Building microservices of Sam Newman, Part II bases"
 date: 2015-11-04 22:04:04
-categories: microservices
+category: microservices
 ---
 Before to start deeply in microservices, and after to describe the first benefits in previus post, Sam explains how a good Microservices looks like.
 

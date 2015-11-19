@@ -2,7 +2,7 @@
 layout: post
 title:  "Debugging Grails Apps without IDE"
 date: 2015-11-15 22:41:04
-categories: grails
+category: grails
 ---
 I'm a Sublime Text IDE fan, is simple, easy to use and has a lot of awesome packages, but for some programming languages have not a good support. Languages derived of JVM are a good sample of that.
 
